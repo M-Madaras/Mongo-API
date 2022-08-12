@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb"
-import { uri, dbName } from "./dbsecrets.js"
+import { uri } from "./dbsecrets.js"
 // connect to client
 const client = new MongoClient(uri)
 // connects to database
@@ -42,3 +42,4 @@ app.post("/movie",(req,res) => {
 app.listen(port, () => {
     console.log("ready on http://localhost:" + port)
 })
+// nodemon go to url port
